@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Speech-To-Text</string>
+    <string name="app_name">Speech_To_Text</string>
     <string name="press_mic_button_to_give_input_voice">Press mic Button to give input voice!</string>
 </resources>
