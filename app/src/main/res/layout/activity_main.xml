@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     android:background="#B37D3CBD"
     tools:context=".MainActivity">
 
@@ -14,12 +15,24 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="67dp"
         android:layout_marginEnd="24dp"
-        android:text="TextView"
+        android:text="@string/press_mic_button_to_give_input_voice"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Convert Speech to Text" />
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/search_voice_btn"
+        android:background="@null"
+        android:src="@drawable/ic_mic_"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
