@@ -1,3 +1,4 @@
+// Code Written by Rahul Sivadasan (11/01/2020)
 package com.example.speech_to_text
 
 import android.app.Activity
@@ -32,6 +33,14 @@ class MainActivity : AppCompatActivity() {
     }
     private fun speak(){
         // I am adding an Intent here for the conversion to start
+//------------------------------------------------------------------------------------------------------------------------------
+        // RecognizerIntent :SpeechRecognizer is better for hands-free user interfaces,
+        // since your app actually gets to respond to error conditions like "No matches" and perhaps restart itself.
+        // When you use the Intent, the app beeps and shows a dialog that the user must press to continue.
+//-------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
         val speechIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
         speechIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
@@ -49,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         }catch (e:Exception){
 
-            // If an Error Happens
+            // If an Error Happens , The toast will be triggered
 
             Toast.makeText(this,e.message, Toast.LENGTH_SHORT).show()
 
